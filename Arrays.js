@@ -28,4 +28,3 @@ console.log(Array.isArray(Myarray));
 // chai jest
 // test Suite
 // native test runner
-// types of testing for paper publishing company
