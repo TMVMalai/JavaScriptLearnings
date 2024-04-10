@@ -1,0 +1,50 @@
+<html>
+    <head>Calculator</head>
+    </head>
+    <body>
+        <input id="Value1"/>
+        <input id="Value2"/>
+    <br>
+    <button id ="addbtn">Add</button>
+    <button id ="subbtn">Sub</button>
+    <button id ="mulbtn">Mul</button>
+    <button id ="Divibtn">Divi</button>
+    <p id="Result">
+
+    </p>
+    </body>
+
+    <script>
+        document.getElementById("addbtn").onclick=addtion;
+        document.getElementById("subbtn").onclick=sub;
+        document.getElementById("mulbtn").onclick=multiply;
+        document.getElementById("Divibtn").onclick=division;
+    function addtion(){
+    let a = document.getElementById("Value1").value;
+    let b = document.getElementById("Value2").value;
+    let result = parseInt(a) + parseInt(b);
+    document.getElementById("Result").innerHTML=result;
+}
+
+function sub(){
+    let a = document.getElementById("Value1").value;
+    let b = document.getElementById("Value2").value;
+    let result = parseInt(a) - parseInt(b);
+    document.getElementById("Result").innerHTML=result;
+}
+
+function multiply(){
+    let a = document.getElementById("Value1").value;
+    let b = document.getElementById("Value2").value;
+    let result = parseInt(a) * parseInt(b);
+    document.getElementById("Result").innerHTML=result;
+}
+
+function division(){
+    let a = document.getElementById("Value1").value;
+    let b = document.getElementById("Value2").value;
+    let result = parseInt(a) / parseInt(b);
+    document.getElementById("Result").innerHTML=result;
+}
+    </script>
+</html>
